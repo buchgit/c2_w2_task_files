@@ -4,7 +4,6 @@ import android.Manifest;
 import android.app.*;
 import android.content.*;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Environment;
@@ -110,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.btn2_main:
-                imageView.setImageDrawable(Drawable.createFromPath(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+Environment.DIRECTORY_DOWNLOADS.toString()+downloadSubPath));
+                imageView.setImageDrawable(Drawable.createFromPath(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+Environment.DIRECTORY_DOWNLOADS+downloadSubPath));
                 break;
         }
     }
